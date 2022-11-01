@@ -48,6 +48,7 @@ def flood_fill(input_board: List[str], old: str, new: str, x: int, y: int) -> Li
     return output_board
 
 
+# Change color of location(x, y) to new color
 def paint_color(input: List[str], x: int, y: int, new: str) -> List[str]:
     output_line = input[x][:y] + new + input[x][y + 1:]
     return output_line
